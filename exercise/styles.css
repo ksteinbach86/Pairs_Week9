@@ -1,6 +1,11 @@
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #87CEEB;
+    border: 20px solid #87CEEB;
+    border-radius: 25px;
+    border-top: 5px solid #87CEEB;
+    border-bottom: 0px solid #87CEEB;
 }
 
 nav ul {
@@ -15,6 +20,26 @@ nav ul li {
     border-radius: 5px;
     text-align: center;
     line-height: 50px;
+    
+}
+
+
+header {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+nav {
+    flex-grow: 1;
+    padding-left: 35%;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+    flex-flow: right;
+
 }
 
 header img {
@@ -29,7 +54,7 @@ header h1 {
 main img {
     object-fit: cover;
     margin-right: 20px;
-    height: 350px;
+    height: 450px;
     width: 35%;
 }
 
@@ -38,11 +63,22 @@ main li:before {
     margin-left: -31px;
     padding-right: 8px;
 }
+main {
+    background-color: #87CEEB;
 
-main, section, footer {
+}
+
+ section, footer {
     background-color: #ffffff;
     border-radius: 5px;
     padding: 20px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    height: 2rem;
+    font-size: 20px;
 }
 
 .store-button { /* used for store link in "Get refreshed" section */
@@ -55,3 +91,90 @@ main, section, footer {
     text-align: center;
     text-transform: uppercase;
 }
+
+#fact {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+#fact ul  {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: left;
+}
+
+#fact h2 {
+    margin-left: -32px;
+}
+
+
+#race img {
+    margin-left: -50px;
+    height: 200px;
+    width: auto;
+    grid-area: img;
+}
+#text {
+    grid-area: text;
+    text-align: center;
+    margin-top: -20px;
+}
+#race{
+    grid-area: race;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-areas: 
+    ". text"
+    "img text"
+    ". text";
+}
+#store {
+    grid-area: store;
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    grid-template-areas: 
+    ". h2 ."
+    "p p p"
+    ". bttn . ";
+    text-align: center;
+}
+#text p {
+    text-align: left;
+    margin-top: 75px;
+    
+}
+
+#store h2 {
+    grid-area: h2;
+    
+}
+
+#store p {
+    grid-area: p;
+    text-align: left;
+    margin-bottom: -20px;
+}
+
+#button  {
+    height: 0px;
+    grid-area: bttn;
+}
+
+
+#racestore {
+    display: grid;
+    grid-template-columns: 1fr 5px 1fr;
+    grid-template-areas: 
+    "race . store"
+    ;
+    margin-left: -20px;
+    margin-right: -20px;
+    background-color: #87CEEB;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
