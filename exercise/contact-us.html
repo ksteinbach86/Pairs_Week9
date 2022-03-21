@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact Us</title>
+</head>
+
+<header>
+    <img src="images/te-pops.png">
+    <h1>Tech Elevator Popsicles</h1>
+    <nav>
+        <ul>
+            <li><a>HOME</a></li>
+            <li><a>STORE</a></li>
+            <li><a>CONTACT US</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+<main>
+    <h2>Contact Us</h2>
+    <form method="POST" action="/api/reservation">
+
+        <div>
+            <label for="name">Name:</label>
+            <input id="name" name="name" type="text" required />
+        </div>
+
+        <div>
+            <label for="hear-of-us">How did you hear of us?</label>
+            <select id="hear-of-us" name="hear-of-us">
+                <option value="popsicle-monthly">Popsicle Monthly</option>
+                <option value="desserts">Desserts n Stuff</option>
+                <option value="something">Something something</option>
+                <option value="tech-elevator">Tech Elevator</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="favorite-color">What color is your favorite popsicle?</label>
+            <input id="favorite-color" name="favorite-color">
+        </div>
+
+        <div>
+            <label for="about">Please let us know any comments you have:</label><br />
+            <textarea id="about" name="about" rows="8" cols="60"></textarea>
+        </div>
+
+        <div>
+            <input type="submit" />
+        </div>
+
+
+    </form>
+
+    <footer>© Tech Elevator 2022</footer>
+</main

@@ -176,5 +176,47 @@ footer {
     padding-bottom: 10px;
 }
 
+@media screen and (max-width: 800px){
+    header{
+        grid-area: header;
+        display: flex;
+        flex-direction: column;
+    }
+    #fact {
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #rainbow{
+       
+    }
+    #store{
+        margin-top: 12px;
+    }
+    #racestore {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "race"
+        "store"
+        ;
+        margin-left: -20px;
+        margin-right: -20px;
+        background-color: #87CEEB;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 
-
+    main{
+        display: grid;
+    
+    grid-template-columns: 1fr ;
+    grid-template-areas: 
+    "fact"
+    "race"
+    "store"
+    ;
+    }
+}
